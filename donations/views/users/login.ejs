@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Login
+    <form action="/users/access" method="post">
+        <label for="email"><input type="email" name="email" id="email"> </label>
+        <label for="password"><input type="password" name="password" id="password"></label>
+        <label for="remember">Remember me<input type="checkbox" name="remember"></label>
+        <button type="submit">Access</button>
+    </form>
+    <% if (locals.errors && errors.email) {%>
+        <p>  <%= errors.email.msg %> </p>
+        <% } %>
+        <% if (locals.errors && errors.password) {%>
+        <p>  <%= errors.password.msg %> </p>
+        <% } %>
+</body>
+</html>
+</body>
+</html>

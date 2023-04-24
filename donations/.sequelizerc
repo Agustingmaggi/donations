@@ -1,0 +1,9 @@
+'use strict'
+const path = require('path') //como vamos a trabajar con rutas, usamos path
+module.exports = {
+    "env": process.env.DB || "development",
+    "config": path.join(__dirname, "database/config", "config.js"), //es una ruta o lugar donde se va a crear un archivo que nos permita configurar el acceso a nuestra base de datos
+    "migrations-path": path.join(__dirname, "database/migrations"),
+    "seeders-path": path.join(__dirname, "database/seeders"),
+    "models-path": path.join(__dirname, "database/models") //los models interactuan con nuestra base de datos, es una extraccion de algunas tablas de la base de datos.
+}

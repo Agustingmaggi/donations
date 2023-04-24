@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/projects/<%= product.id %>?m=PUT" method="post"> <!--como los formularios solo permite el method post, aca es donde entra el method override y ponemos lo de m o el simbolo que hayamos elegido en app.js-->
+        <input type="text" name="name" id="name" placeholder="Nombre de producto">        
+        <input type="number" name="precio" id="precio" placeholder="precio de producto">        
+        <button type="submit">Update</button>        
+    </form>      
+</body>
+</html>

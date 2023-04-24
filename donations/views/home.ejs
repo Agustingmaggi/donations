@@ -1,0 +1,15 @@
+<%- include('./partials/head') %>
+<body>
+    <%- include('./partials/header') %>
+   <h1>Este es el body</h1>
+   <% if (user) { %>
+    User: <%= user.email %>
+    <form action="/users/logout" method="post">
+        <a href="/users/profile">Profile</a>
+        <button type="submit">Logout</button>
+   <% } else { %>
+    No estas logeado
+    <% } %>
+    <a href="/carrito">carrito</a>
+</body>
+</html>
