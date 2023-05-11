@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    nuevo producto!
-    <form action="/projects/guardar" method="post">
-        <input type="text" name="name" id="name" placeholder="Nombre de producto">        
-        <input type="number" name="price" id="price" placeholder="precio de producto">        
+    nuevo producto JSON!
+    <form action="/projects/guardar" enctype="multipart/form-data" method="post">
+        <input type="text" name="name" id="name" placeholder="Nombre del producto"> <br>      
+        <input type="number" name="price" id="price" placeholder="precio sugerido del producto"> <br>       
+        <input type="file" name="file" id="file" multiple> <br>   
         <button type="submit">Guardar</button>        
     </form>
 </body>

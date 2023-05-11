@@ -1,12 +1,13 @@
+const product = require('../models/product')
 const {Project} = require('../database/models')
 const axios = require('axios')
 module.exports = {
-    landing: (req, res) => res.render('../views/home'),
+    landing: (req, res) => res.render('../views/home',{ modelo: product.info()}),
     homee: async (req, res) => {
         try {
             const products = await Project.findAll()
-            res.render('carrito', {
-                products
+            res.render('carritoDB', {
+                products,
         })
            } catch (error){
             res.send(error)
@@ -38,7 +39,7 @@ module.exports = {
                 subtotal:product.price * quantity,
             })
         }
-            res.redirect('/carrito')
+            res.redirect('/carritoDB')
         } catch (error){
             res.send(error)
         }

@@ -1,22 +1,29 @@
 <%- include('./head') %>
 <body>
     <header>
-        <div class="logo">
-          <a href="#">Logo</a>
+        <nav class="nav">
+        <div class="left">
+          <a>Logo</a>
+          <a href="/">Inicio</a>
         </div>
-        <nav>
-          <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/projects">Productos</a></li>
-            <li><a href="/projects/create">Crea tu producto</a></li>
-          </ul>
-        </nav>
-        <nav>
-            <ul>
-            <li><a href="../users/register">Register</a></li>
-            <li><a href="../users/login">Login</a></li>
-        </ul>
-        </nav>
+        <div class ="center">
+          <a href="/projects">Proyectos con JSON</a>
+          <a href="/projects/create">Crea tu proyecto JSON</a>
+          <a href="/database">Proyectos con DB</a>
+          <a href="/database/agregarProyecto">Agregar Proyecto a la DB
+        </div>
+        <div class="right">
+          <% if (!user) { %>
+              <a href="/users/login">Login</a>
+              <a href="/users/register">Register</a>
+          <% } else { %>
+              <a href="/users/profile">Profile</a>
+              <form action="/users/logout" method="post">
+                  <button type="submit">Logout</button>
+              </form>
+              <% } %>
+            </div>
+      </nav>
       </header>
 </body>
 </html>

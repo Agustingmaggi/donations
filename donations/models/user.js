@@ -21,9 +21,12 @@ const model = {
         model.write(all)
         return user
     },
+
     validate: [
         validator.body('email').isEmail().withMessage('Invalid Email'),
-        validator.body('password').isLength({ min: 5}).withMessage('Min 5 characters')
+        validator.body('password').isLength({ min: 5}).withMessage('Min 5 characters'),
+        
+        //validator.body('confirmPassword').equals('password').withMessage('Passwords do not match')
     ]
     }
 

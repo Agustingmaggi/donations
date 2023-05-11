@@ -22,6 +22,7 @@ app.set('views', path.resolve(__dirname,'./views'))
 
 app.use(require('./middlewares/user'))
 app.use(require('./middlewares/cart'))
+app.use(require('./middlewares/carrito'))
 app.use(method("m"))
 
 

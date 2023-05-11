@@ -25,6 +25,16 @@ module.exports = {
             })
         }
 
+        if(req.body.password !== req.body.confirmPassword){
+            return res.render('users/register',{
+                errors:{
+                    password:{
+                        msg: 'Las contraseñas no coinciden'
+                    }
+                }
+            })
+        }
+
         let userRegistred = user.create(req.body)
 
        return res.redirect('/users/login')

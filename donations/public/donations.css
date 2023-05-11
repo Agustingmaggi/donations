@@ -1,0 +1,17 @@
+.contenedor-proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: orange;
+}
+
+body {
+    background-color: green
+}
+
+.caja-texto-producto{
+    background-color:lightblue;
+    margin:20px;
+    text-align: center;
+    list-style: none;
+}

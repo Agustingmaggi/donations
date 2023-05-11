@@ -10,15 +10,18 @@ module.exports = (Sequelize,Datatypes) => {
             notNull:false,
             type: Datatypes.TEXT
         },
-        /*price: {
+        price: {
             type: Datatypes.FLOAT,
-            allowNull: false,
-        }   */    
+           // allowNull: false,
+        },
+        photo: {
+            type: Datatypes.TEXT
+        }      
     }
     const config={
         timestamps: false,
         createdAt: 'created_at',
-         updatedAt: 'updated_at',
+        updatedAt: 'updated_at',
         tableName: 'projects'
     }
     

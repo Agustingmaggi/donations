@@ -8,5 +8,50 @@
     "id": 2,
     "email": "busquedarrhhco@gmail.com",
     "password": "$2b$10$auSfDD9ikGMjpei3358RteJD8kP4hBtu1PjemEpniLrHWZNfyh5DC"
+  },
+  {
+    "id": 3,
+    "email": "mgarciamaggi@gmail.com",
+    "password": "$2b$10$0NhTkCHjcBoRsqe1.cIIguOT7XtswiUoDgC2.Up6KqExMKhTVUyji"
+  },
+  {
+    "id": 4,
+    "email": "agustingarciamaggi1@gmail.com",
+    "password": "$2b$10$jli.RdI7C1o.xv448aENIODBQy1ix04QCOj1EGuQ9dGW7yOQcje1y"
+  },
+  {
+    "id": 5,
+    "email": "mgarciamaggiii@gmail.com",
+    "password": "$2b$10$T48NUIOcYmDg/Gj6xg8Vl.XsO65TUul0c/IrzcJ6BrxR4aMjL5N1."
+  },
+  {
+    "id": 6,
+    "email": "agustingarciamaggi11@gmail.com",
+    "password": "$2b$10$fkLQQtSWfkWSzkvs3iBMYO7IG5C5Qk6t2CSE/zs0LM2eyLR1SIHYK"
+  },
+  {
+    "id": 7,
+    "email": "mgarciamagggggi@gmail.com",
+    "password": "$2b$10$EzirnrECu75tOOti3UL0VOzsOy9PwfZwq.JN8Cg44rEK5xWWzYH3K"
+  },
+  {
+    "id": 8,
+    "email": "busquedarrhhcbbo@gmail.com",
+    "password": "$2b$10$oHXDVRo1pOwi32PtYUlkCOr19z/h432/ar9V.6GjOLvj.hdWcrFhq"
+  },
+  {
+    "id": 9,
+    "email": "mdfsgarciamaggi@gmail.com",
+    "password": "$2b$10$ImkQH90jR9krT1q6Z2m1Pe86qboCAmmOZiojfTP6h4GSKNCmHIRJq"
+  },
+  {
+    "id": 10,
+    "email": "mgarcia33553maggi@gmail.com",
+    "password": "$2b$10$ZmF7akbRSVKKbq9BoYAiVehnLPmBl0gyOZPPJxBcF0YUCiGjmQrfi"
+  },
+  {
+    "id": 11,
+    "email": "agustingarciamaggi@gmail.com",
+    "password": "$2b$10$/WdQFU/1lGNsmCEJZuYAzuyi7k.Yl5gksnwKVlDD13CaiSBBTV0Gq"
   }
 ]

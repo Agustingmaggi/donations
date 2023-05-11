@@ -1,10 +1,26 @@
 [
   {
     "id": 1,
-    "name": "first prod"
+    "name": "primer producto",
+    "price": 10,
+    "image_id": [
+      1
+    ]
   },
   {
     "id": 2,
-    "name": "second prod"
+    "name": "segundo proyectoo",
+    "price": 1234,
+    "image_id": [
+      2
+    ]
+  },
+  {
+    "id": 3,
+    "name": "luna",
+    "price": 199,
+    "image_id": [
+      3
+    ]
   }
 ]

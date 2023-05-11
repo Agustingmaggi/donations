@@ -4,10 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="donations.css">
+    <link rel="stylesheet" href="header-projects.css">
+    <title>Donationss</title>
 </head>
 <body>
-    listado de donaciones!
+
+    <header>
+        <nav class="nav">
+        <div class="left">
+          <a>Logo</a>
+          <a href="/">Inicio</a>
+        </div>
+        <div class ="center">
+          <a href="/projects">Proyectos con JSON</a>
+          <a href="/projects/create">Crea tu proyecto</a>
+        </div>
+        <div class="right">
+          <% if (!user) { %>
+              <a href="/users/login">Login</a>
+              <a href="/users/register">Register</a>
+          <% } else { %>
+              <a href="/users/profile">Profile</a>
+              <form action="/users/logout" method="post">
+                  <button type="submit">Logout</button>
+              </form>
+              <% } %>
+            </div>
+      </nav>
+      </header>
+      <div class="separator"></div>
+
+    listado de donaciones con JSON<br><br>
+<article class="contenedor-proyectos">
+    <% modelo.forEach(element => { %>
+        <ul class="caja-texto-producto"> 
+            <% if (element.image_id && element.image_id.url) { %>
+                <img src="./images/<%= element.image_id.url %>" width="150"
+                height="150">
+                <% } %>
+                <div class="preciosYdescuentos">
+             <%= element.name %>
+           <li class="precios">$ <%=element.price%></li>
+         </div>
+            <button type="submit"><a href="/projects/carritoJSON"> Donate</a> </button>
+       </ul>
+    
+       <% }) %>
+    </article>
+
+    De aca para abajo lo dejo para cuando haga tema admin porque es listado de donaciones con base de datos! <br><br>
+   
     <% modelo.forEach(element => { %>
       <li> <a href="/projects/<%= element.id %>"> 
         <%= element.name %>

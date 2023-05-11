@@ -15,5 +15,5 @@ const user = (req,res,next) => {
 
 module.exports = user
 
-//este middleware creo que solamente se requirió en la visa del home y del profile,
+//este middleware creo que solamente se requirió en la vista del home y del profile,
 //y ni siquiera se requirió de manera normal o sea con require() etc, se puso directamente if (user) y chau.
